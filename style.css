@@ -13,7 +13,7 @@ body{
 
 header{
     width: 100%;
-    height: 10vh;
+    height: 13vh;
     border-bottom: 1px solid #e4dfdf;
 }
 
@@ -27,7 +27,7 @@ header nav{
 }
 
 header nav img{
-    width: 150px;
+    width: 100px;
 } 
 
 header nav ul{
@@ -50,10 +50,65 @@ header nav ul li a{
 }
 
 header nav ul .cont{
-    background-color: #d65026;
+    background-color: #d46828;
     padding: 15px 27px;
     border: none;
     font-size: 14px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+header nav ul .cont:hover .drop{
+    opacity: 1;
+}
+
+header nav ul .drop {
+    position: absolute;
+    background-color: #d46828;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    bottom: -90px;
+    height: auto;
+    width: 90%;
+    padding: 15px 0;
+    z-index: 3;
+    left: 0;
+    opacity: 0;
+    font-size: 13px;
+    
+  }
+  header nav ul .drop li{
+    font-size: 13px;
+
+  }
+
+  header nav ul .drop li a{
+    text-decoration: underline;
+
+  }
+
+  header nav ul .drop li:first-child{
+    margin-bottom: 15px;
+  }
+
+  header nav ul .drop li a:hover{
+    color: rgb(104, 104, 252);
+  }
+
+  header nav ul .drop::before{
+    position: absolute;
+    height: 20px;
+    background-color: #d46828;
+    content: '';
+    left: 5px;
+    width: 20px;
+    top: -10px;
+    transform: rotate(45deg);
+    z-index: 1;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); */
+
+  
 }
 header nav ul .cont a{
     color: #fff;
@@ -111,7 +166,7 @@ header nav ul .cont a{
 
 
 .hero-l button{
-    background-color: #d65026;
+    background-color: #d46828;
     padding: 17px 30px;
     border: none;
     font-size: 14px;
@@ -130,6 +185,22 @@ header nav ul .cont a{
 
 .menu-icons{
     display: none;
+}
+
+.hero .btns{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.hero .btns .btn-img{
+    width: 32%;
+
+}
+
+.hero .btns .btn-img img{
+    width: 90%;
+
 }
 
 
@@ -153,6 +224,8 @@ header nav ul .cont a{
 
 .goal .goal-c .g-img img{
     width: 100%;
+    height: 350px;
+    object-fit: cover;
 }
 
 .goal .goal-c .g-text{
@@ -223,6 +296,8 @@ header nav ul .cont a{
 
 .build-flex .b-img img{
     width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
 .build-flex .b-txt{
@@ -233,7 +308,7 @@ header nav ul .cont a{
     width: fit-content;
     padding: 5px 22px 5px 0;
     font-weight: 500;
-    color: rgb(241, 71, 6);
+    color: #d46828;
     font-size: 16px;
     background-color: rgb(255, 244, 229);
     border-bottom: 2px solid rgb(255, 200, 168);
@@ -274,7 +349,7 @@ header nav ul .cont a{
 }
 
 .build-flex .b-txt a{
-    color: rgb(214, 80, 38);
+    color: #d46828;
     font-size: 19px;
     font-weight: 400;
 }
@@ -333,7 +408,8 @@ header nav ul .cont a{
 
 .limit .limit-c .l-r img{
     width: 100%;
-    margin-top: 20px;
+    height: 400px;
+    object-fit: cover;
 }
 
 
@@ -347,7 +423,7 @@ header nav ul .cont a{
 }
 
 .business h3{
-    font-size: 50px;
+    font-size: 45px;
     width: 45%;
     font-weight: 700;
 }
@@ -390,7 +466,7 @@ header nav ul .cont a{
 } 
 
 .help .help-c button{
-    background-color: #d65026;
+    background-color: #d46828;
     padding: 17px 30px;
     border: none;
     font-size: 14px;
@@ -472,7 +548,7 @@ footer .foot-c .second{
 }
 
 footer .foot-c .second .s-f{
-    width: 17%;
+    width: 23%;
 }
 
 footer .foot-c .second .s-f .f-logo{
@@ -481,7 +557,11 @@ footer .foot-c .second .s-f .f-logo{
 }
 
 footer .foot-c .second .s-f:first-child{
-    width: 20%;
+    width: 27%;
+}
+
+footer .foot-c .second .s-f img{
+    width: 45%;
 }
 
 footer .foot-c .second .s-f  p{
@@ -560,7 +640,7 @@ footer .foot-c .privacy a{
     width: fit-content;
     padding: 8px 0;
     font-weight: 500;
-    color: rgb(241, 71, 6);
+    color: #d46828;
     font-size: 18px;
     background-color: rgb(255, 244, 229);
     border-bottom: 2px solid rgb(255, 200, 168);
@@ -583,6 +663,58 @@ footer .foot-c .privacy a{
 
 .about-h .abt-r img{
     width: 100%;
+}
+
+.exceptional-s{
+    background-color: #f7f8f8;
+}
+
+.exceptional{
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.exceptional h3{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.exceptional img{
+    width: 38%;
+    object-fit: cover;
+}
+
+.exceptional .exc-l{
+    width: 55%;
+}
+
+.exceptional .exc-l .exc-c{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 10px;
+    border-radius: 30px 0 30px 0;
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+
+.exceptional .exc-l .exc-c div{
+    width: 90%;
+    margin: auto;
+}
+
+.exceptional .exc-l .exc-c div h4{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.exceptional .exc-l .exc-c div p{
+    font-size: 16px;
 }
 
 
@@ -630,7 +762,7 @@ footer .foot-c .privacy a{
 }
 
 .who .we .w-txt h4{
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .who .we .w-txt p{
@@ -641,7 +773,7 @@ footer .foot-c .privacy a{
 }
 
 .who .we .w-txt a{
-    color: #d65026;
+    color: #d46828;
     font-size: 16px;
     font-weight: 300;
 }
@@ -675,6 +807,50 @@ footer .foot-c .privacy a{
 
 .mission .m-r img{
     width: 100%;
+}
+
+.core-values{
+    width: 100%;
+    background-color: #f7f8f8;
+    padding: 50px 0;
+}
+
+.core-values .values{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.core-values .values h3{
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.core-values .values .cor{
+    width: 46%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 10px;
+    margin-bottom: 20px;
+    padding: 30px 0;
+}
+
+.core-values .values .cor div{
+    width: 90%;
+    margin: auto;
+}
+
+.core-values .values .cor div h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.core-values .values .cor div p{
+    font-size: 16px;
+    color: #424a52;
 }
 
 .squad{
@@ -747,10 +923,20 @@ footer .foot-c .privacy a{
     padding: 50px 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 }
 .contact .c-l{
     width: 45%;
+}
+
+.contact .c-l .img{
+    width: 100%;
+    text-align: center;
+}
+
+.contact .c-l .img img{
+    width: 50%;
+    margin-bottom: 30px;
 }
 
 .contact .c-l h2{
@@ -841,12 +1027,84 @@ footer .foot-c .privacy a{
 }
 
 .contact .c-r .contact-form button{
-    background-color: #d65026;
+    background-color: #d46828;
     padding: 15px 33px;
     border: none;
     font-size: 14px;
     color: #fff;
 }
+
+
+
+
+
+.carr {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+    width: 95%;
+    margin: auto ;
+    background-color: #f7f7f7;
+}
+
+.carousel {
+    position: relative;
+    width: 100%; /* Adjust width to fit two cards */
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 50%; 
+    box-sizing: border-box;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.carousel-item img {
+    width: 95%;
+    display: block;
+    /* object-fit: contain; */
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 50%;
+}
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+    /* height: 35vh; */
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+
 
 @media screen and (max-width:1050px){
     footer .foot-c .top .subs{
@@ -1030,6 +1288,14 @@ footer .foot-c .privacy a{
         margin-bottom: 25px;
     }
 
+    .exceptional img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .exceptional .exc-l{
+        width: 100%;
+    }
+
     .contact{
         flex-direction: column-reverse;
     }
@@ -1083,6 +1349,12 @@ footer .foot-c .privacy a{
         display: none;
         width: 35px;
     }
+
+    .carousel-item {
+        min-width: 100%; 
+        /* Each item takes up 50% of the carousel width */
+        box-sizing: border-box;
+    }
     .business{
         flex-direction: column;
     }
@@ -1115,6 +1387,10 @@ footer .foot-c .privacy a{
     }
     .mission .m-l h2{
         margin: 20px 0;
+    }
+
+    .core-values .values .cor{
+        width: 100%;
     }
 
     .squad p{
@@ -1206,6 +1482,20 @@ footer .foot-c .privacy a{
     .who .we .w-txt h4{
         font-size: 22px;
     }
+    .exceptional h3{
+        font-size: 20px;
+    }
+    .exceptional .exc-l .exc-c div h4{
+        font-size: 18px;
+    }
+    .squad h2{
+        font-size: 26px;
+    }
+    .squad .squad-cards .s-card h5{
+        font-size: 20px;
+    }
+
+    
 }
 
 @media screen and (max-width:350px){
@@ -1218,6 +1508,12 @@ footer .foot-c .privacy a{
     .hero-l .h-logos .ll{
         margin-right: 0;
         margin-bottom: 15px;
+    }
+    .core-values .values h3{
+        font-size: 22px;
+    }
+    .core-values .values .cor div h4{
+        font-size: 18px;
     }
 
     .squad h2{
