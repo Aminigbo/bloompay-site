@@ -224,8 +224,8 @@ header nav ul .cont a{
 
 .goal .goal-c .g-img img{
     width: 100%;
-    height: 350px;
-    object-fit: cover;
+    height: 400px;
+    object-fit: contain;
 }
 
 .goal .goal-c .g-text{
@@ -293,10 +293,11 @@ header nav ul .cont a{
 .build-flex .b-img{
     width: 45%;
 }
-
 .build-flex .b-img img{
     width: 100%;
-    height: 400px;
+}
+.build-flex .bb-img img{
+    height: 450px;
     object-fit: cover;
 }
 
@@ -365,7 +366,7 @@ header nav ul .cont a{
 
 .limit{
     width: 100%;
-    padding: 100px 0;
+    padding: 50px 0;
     background-color: #f7f8f8;
 }
 
@@ -374,6 +375,7 @@ header nav ul .cont a{
     margin: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .limit .limit-c .l-l{
@@ -408,8 +410,7 @@ header nav ul .cont a{
 
 .limit .limit-c .l-r img{
     width: 100%;
-    height: 400px;
-    object-fit: cover;
+   
 }
 
 
@@ -595,6 +596,7 @@ footer .foot-c .second .s-f h4{
 
 footer .foot-c .second .s-f ul{
     list-style: none;
+    padding-left: 0 !important;
 }
 
 
@@ -1314,7 +1316,7 @@ footer .foot-c .privacy a{
 @media screen and (max-width:700px){
     header nav ul{
         position: absolute;
-        background-color: #4c7139;
+        background-color: #d46828;
         height: 90vh;
         top: 10vh;
         left: 0;
@@ -1330,6 +1332,15 @@ footer .foot-c .privacy a{
         font-size: 20px;
         
     } 
+    header nav ul .cont{
+        background-color: #fff;
+        color: #d46828;
+    }
+
+    header nav ul .cont a{
+        color: #d46828;
+
+    }
 
     header nav ul li a{
         color:#fff ;
