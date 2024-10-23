@@ -50,7 +50,7 @@ header nav ul li a{
 }
 
 header nav ul .cont{
-    background-color: #d46828;
+    background-color: #47200D;
     padding: 15px 27px;
     border: none;
     font-size: 14px;
@@ -65,7 +65,7 @@ header nav ul .cont:hover .drop{
 
 header nav ul .drop {
     position: absolute;
-    background-color: #d46828;
+    background-color: #47200D;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     bottom: -90px;
@@ -99,7 +99,7 @@ header nav ul .drop {
   header nav ul .drop::before{
     position: absolute;
     height: 20px;
-    background-color: #d46828;
+    background-color: #47200D;
     content: '';
     left: 5px;
     width: 20px;
@@ -166,7 +166,7 @@ header nav ul .cont a{
 
 
 .hero-l button{
-    background-color: #d46828;
+    background-color: #47200D;
     padding: 17px 30px;
     border: none;
     font-size: 14px;
@@ -309,7 +309,7 @@ header nav ul .cont a{
     width: fit-content;
     padding: 5px 22px 5px 0;
     font-weight: 500;
-    color: #d46828;
+    color: #47200D;
     font-size: 16px;
     background-color: rgb(255, 244, 229);
     border-bottom: 2px solid rgb(255, 200, 168);
@@ -350,7 +350,7 @@ header nav ul .cont a{
 }
 
 .build-flex .b-txt a{
-    color: #d46828;
+    color: #47200D;
     font-size: 19px;
     font-weight: 400;
 }
@@ -467,7 +467,7 @@ header nav ul .cont a{
 } 
 
 .help .help-c button{
-    background-color: #d46828;
+    background-color: #47200D;
     padding: 17px 30px;
     border: none;
     font-size: 14px;
@@ -642,7 +642,7 @@ footer .foot-c .privacy a{
     width: fit-content;
     padding: 8px 0;
     font-weight: 500;
-    color: #d46828;
+    color: #47200D;
     font-size: 18px;
     background-color: rgb(255, 244, 229);
     border-bottom: 2px solid rgb(255, 200, 168);
@@ -775,7 +775,7 @@ footer .foot-c .privacy a{
 }
 
 .who .we .w-txt a{
-    color: #d46828;
+    color: #47200D;
     font-size: 16px;
     font-weight: 300;
 }
@@ -876,19 +876,21 @@ footer .foot-c .privacy a{
 }
 
 .squad .squad-cards{
+    width: 60%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
 }
 
 .squad .squad-cards .s-card{
-    width: 24%;
+    width: 45%;
     text-align: center;
 }
 
 .squad .squad-cards .s-card img{
-    width: 170px;
-    height: 170px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
@@ -1029,7 +1031,7 @@ footer .foot-c .privacy a{
 }
 
 .contact .c-r .contact-form button{
-    background-color: #d46828;
+    background-color: #47200D;
     padding: 15px 33px;
     border: none;
     font-size: 14px;
@@ -1272,7 +1274,9 @@ footer .foot-c .privacy a{
     .squad .squad-cards{
         flex-wrap: wrap;
     }
-
+    .squad .squad-cards{
+        width: 80%;
+    }
     .squad .squad-cards .s-card{
         width: 47%;
         margin-bottom: 25px;
@@ -1316,7 +1320,7 @@ footer .foot-c .privacy a{
 @media screen and (max-width:700px){
     header nav ul{
         position: absolute;
-        background-color: #d46828;
+        background-color: #47200D;
         height: 90vh;
         top: 10vh;
         left: 0;
@@ -1334,11 +1338,11 @@ footer .foot-c .privacy a{
     } 
     header nav ul .cont{
         background-color: #fff;
-        color: #d46828;
+        color: #47200D;
     }
 
     header nav ul .cont a{
-        color: #d46828;
+        color: #47200D;
 
     }
 
@@ -1405,6 +1409,13 @@ footer .foot-c .privacy a{
     }
 
     .squad p{
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .squad .squad-cards{
         width: 90%;
     }
 
